@@ -1,10 +1,10 @@
-interface Props {}
+import { PricingTable } from "@clerk/nextjs"
 
-function Subscription(props: Props) {
-  const {} = props
-
+function Subscription() {
   return (
-    <div></div>
+    <div>
+      <PricingTable />
+    </div>
   )
 }
 
