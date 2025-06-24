@@ -4,16 +4,13 @@ import { cn } from "@/lib/utils";
 import Link from "next/link"
 import { usePathname } from "next/navigation";
 
-interface Props { }
-
 const navItems = [
   { label: 'Home', href: '/' },
   { label: 'Companions', href: '/companions' },
   { label: 'My Journey', href: '/my-journey' },
 ]
 
-function NavItems(props: Props) {
-  const { } = props
+function NavItems() {
   const pathname = usePathname();
 
   return (

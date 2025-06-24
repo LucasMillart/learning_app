@@ -1,10 +1,14 @@
-interface Props {}
+import CompanionForm from "@/components/CompanionForm"
 
-function NewCompanion(props: Props) {
-  const {} = props
-
+function NewCompanion() {
   return (
-    <div></div>
+    <main>
+      <article>
+        <h1>Companion Builder</h1>
+
+        <CompanionForm />
+      </article>
+    </main>
   )
 }
 
