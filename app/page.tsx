@@ -1,25 +1,12 @@
 import CompanionCard from '@/components/CompanionCard'
 import CompanionList from '@/components/CompanionList'
 import CTA from '@/components/CTA'
-import { Button } from '@/components/ui/button'
-import { SignedIn, SignedOut, SignInButton } from '@clerk/nextjs'
 import { recentSessions } from '@/constants'
 import React from 'react'
 
 const Page = () => {
   return (
     <main>
-      <SignedOut>
-        <div className="text-center py-8">
-          <h1 className="text-3xl font-bold mb-4">Welcome to Converso</h1>
-          <p className="text-lg mb-6">Real-time AI Teaching Platform</p>
-          <SignInButton mode="modal">
-            <Button>Get Started - Sign In</Button>
-          </SignInButton>
-        </div>
-      </SignedOut>
-
-      <SignedIn>
         <h1 className="text-2xl underline">Popular Companions</h1>
 
         <section className="home-section">
@@ -57,7 +44,6 @@ const Page = () => {
           />
           <CTA />
         </section>
-      </SignedIn>
     </main>
   )
 }
